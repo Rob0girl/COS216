@@ -1,0 +1,126 @@
+/*My First CSS File*/
+#block
+{
+	background: black;
+	height: 90%;
+	width:25%;
+	padding: 10px;
+	overflow:scroll;
+	border: 5px solid white;
+	border-radius: 25px;
+	margin:0;
+	position: absolute;
+	right: 8%;
+	display:block;
+}
+body
+{
+	background-color: black;
+	background-image: url("myMusic.jpg");
+}
+member
+{
+	display:block;
+	color:white;
+	margin-left: 5px; 
+}
+name
+{
+	color: yellow;
+	font-size: 2.7em;
+	font-family: 'Tangerine', serif;
+	padding: 20px;
+	display:block;
+}
+first_name
+{
+	display:block;
+	padding: 1px;
+}
+last_name
+{
+	display:block;
+	padding:1px;
+}
+
+genre
+{
+	display:block;
+	color:purple;
+	margin-left: 280px; 
+}
+albums
+{
+	color: orange;
+	padding: 0px;
+	display: block;
+	margin-left: 5px; 
+}
+album
+{
+	color: orange;
+	padding: 0px;
+	display: block;
+	margin-left: 5px; 
+}
+
+/*the animation code*/
+@keyframes example
+{
+	from{ left: 78px;background:yellow}
+		to{left: 650px;background:#81F7F3}
+}
+
+@keyframes myMove {
+    from {top: 0px;}
+    to {top: 169px;}
+} 
+
+@keyframes rotate1
+{
+		100%{transform: rotateZ(90deg); background-color: blue}
+}
+@keyframes rotate2
+{
+		100% {transform: rotateZ(45deg); background-color: orange}
+}
+/*the object to animate*/
+#rectangle1
+{
+	width: 400px;
+	height: 20px;
+	left:400px;
+	background: yellow;
+	border: dashed black 1px;
+	position: absolute;
+	animation-name:example;
+	animation-duration :4s;
+	animation-iteration-count: infinite;
+
+}
+#rectangle1:hover
+{
+	animation-name: rotate1;
+	animation-duration:5s;
+}
+#rectangle2
+{
+	width: 300px;
+	height: 600px;
+	background-color:silver;
+	position: absolute;
+	border: dashed black 1px;
+	left: 570px;
+	top: 27px;
+
+	
+	animation-name: myMove;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+	
+}
+#rectangle2:hover
+{
+	animation-name: rotate2;
+	animation-duration:5s;
+}
